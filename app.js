@@ -5,8 +5,7 @@ const app = express();
 //MIDDLEWARE
 require("dotenv").config
 app.use(cors());
-
-// body parsing middleware to parse incoming request bodies else req.body is undefined
+//parse incoming requests
 app.use(express.json())
 
 //HEALTH CHECK
